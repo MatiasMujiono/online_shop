@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('airline');
-            $table->date('time_start');
-            $table->date('time_end');
+            $table->dateTime('time_start');
+            $table->dateTime('time_end');
             $table->text('description');
-            $table->date('delay_to')->nullable();
+            $table->dateTime('delay_to')->nullable();
             $table->string('destination');
             $table->string('from');
             $table->integer('price');
